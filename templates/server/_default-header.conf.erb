@@ -41,7 +41,7 @@ $ActionFileDefaultTemplate RSYSLOG_FileFormat
 <% end -%>
 <% end -%>
 
-<% if scope.lookupvar('rsyslog::ssl') -%>
+<% if scope.lookupvar('rsyslog::server::ssl_cert') -%>
 # Server side SSL.
 $DefaultNetstreamDriver gtls
 
